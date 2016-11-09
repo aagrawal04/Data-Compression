@@ -9,15 +9,16 @@ typedef struct {
     char first_mismatch;
 } reference;
 main(){
-	char* original = "in ulm und um ulm wachsen ulmen."; 
+	char* original = "Hello World Hello"; 
 	char *search = NULL, *lookahead = NULL; 
 	char *m_search = NULL, *m_lookahead = NULL; 
 	short s_search = 1; 
-	char *symbols;
+	//char *symbols;
 	char *input = original;
 	int i;
 
-	symbols=(char *)malloc(sizeof(char));
+	reference *symbols;
+	symbols=(reference *)malloc(sizeof(reference));
 	 while (*(input + s_search) != '\0') {
 
         search = input;
