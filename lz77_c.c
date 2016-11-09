@@ -8,7 +8,7 @@ typedef struct {
     short length;
     char first_mismatch;
 } reference;
-main(){
+int main(){
 	char* original = "Hello World Hello"; 
 	char *search = NULL, *lookahead = NULL; 
 	char *m_search = NULL, *m_lookahead = NULL; 
@@ -87,4 +87,5 @@ main(){
     printf("Original length: %zu\n", strlen(original));
     printf("Compressed version: \"");
     //reference *symbol = NULL;
+    return 0;
 }
