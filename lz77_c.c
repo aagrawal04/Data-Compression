@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define L_LOOKAHEAD 3
-#define L_SEARCH 5
+#define L_LOOKAHEAD 6
+#define L_SEARCH 7
 typedef struct {
     short start;
     short length;
@@ -10,7 +10,7 @@ typedef struct {
 } reference;
 int main(){
     printf("============================ Welcome to Zip R ============================\n");
-	char* original = "hello world hello"; 
+	char* original = "cabracadabrarrarrad"; 
 	char *search = NULL, *lookahead = NULL; 
 	char *m_search = NULL, *m_lookahead = NULL; 
 	short s_search = 1; 
